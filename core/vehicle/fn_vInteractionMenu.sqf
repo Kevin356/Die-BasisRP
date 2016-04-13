@@ -39,9 +39,7 @@ _Btn9 = _display displayCtrl Btn9;
 _Btn10 = _display displayCtrl Btn10;
 life_vInact_curTarget = _curTarget;
 
-_Btn8 ctrlShow false;
-_Btn9 ctrlShow false;
-_Btn10 ctrlShow false;
+
 
 //Set Repair Action
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
