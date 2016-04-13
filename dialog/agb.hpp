@@ -47,7 +47,7 @@ class agb
             idc = -1;
             colorBackground[] = {0, 0, 0, 0};
             sizeEx = 0.0001;
-            text = "<t size = '0.8'>Unerwünschtes Fehlverhalten führt zum Bann<br / >§1: Hacking / Cheating / Duping / Belleidigungen<br / >§1.1: Selbstmord / Disconect um sich dem Rollenspiel zu entziehen.<br / >§1.2: Bugs/Exploites ausnutzen<br / ><br / >§2:RP wird bei uns Groß geschrieben. Hällst du dich nicht an das RP, hast du hier nix verloren!<br / ><br / >§3: RDM / VDM wird sofort geahndet und die Täter gebannt.<br / ><br / >Unsere Kontaktdaten: <br / >TS³ 5.9.115.237:40005<br / >Homepage Die-BasisRP.de<br / ><br / >Hinweis: Wir suchen ADAC/Medics und Polizisten. Bewerbungen im Forum.<br / ></t> <t font ='PuristaBold' size='0.9'>Um auf unserem Server zu spielen musst du bestätigen dass du das Regelwerk im Forum gelesen hast und dich damit einverstanden erklärst.</t>";
+            text = "<t size = '0.8'>Unerwünschtes Fehlverhalten führt zum Bann<br / >§1: Hacking / Cheating / Duping / Beleidigungen<br / >§1.1: Selbstmord / Disconnect um sich dem Rollenspiel zu entziehen.<br / >§1.2: Bugs/Exploites ausnutzen<br / ><br / >§2:RP wird bei uns Groß geschrieben. Hällst du dich nicht an das RP, hast du hier nix verloren!<br / ><br / >§3: RDM / VDM wird sofort geahndet und die Täter gebannt.<br / ><br / >Unsere Kontaktdaten: <br / >TS³ 5.9.115.237:40005<br / >Homepage Die-BasisRP.de<br / ><br / >Hinweis: Wir suchen ADAC/Medics und Polizisten. Bewerbungen im Forum.<br / ></t> <t font ='PuristaBold' size='0.9'>Um auf unserem Server zu spielen musst du bestätigen dass du das Regelwerk im Forum gelesen hast und dich damit einverstanden erklärst.</t>";
             x = 0.1125;
             y = 0.16;
             w = 0.775;
