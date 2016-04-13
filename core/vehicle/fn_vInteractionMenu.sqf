@@ -58,7 +58,7 @@ if ((playerSide == civilian) && typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kar
 };
 
 //Abschleppen für den ADAC
-if((playerSide == independent) && license_med_adac && {speed _curTarget == 0} && _curTarget in life_vehicles) then {
+if(playerSide == independent) then {
 	_Btn5 ctrlShow true;
 	_Btn5 ctrlSetText "Abschleppen";
 	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
