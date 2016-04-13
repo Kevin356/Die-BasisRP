@@ -44,7 +44,6 @@ life_sitting = false;
 life_firstSpawn = false;
 life_bootVerleihInUse = false;
 life_bootVerleihDone = false;
-life_channel_send = true;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
