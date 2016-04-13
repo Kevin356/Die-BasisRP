@@ -35,7 +35,7 @@ hint parseText (_taxigerufen);
 sleep 45;
 _taxiA = "C_Hatchback_01_yellow_F" createVehicle position player;
 _taxiA allowDamage false;
-//_taxiA setObjectTextureGlobal [0, "skins\car\taxi.paa"];
+_taxiA setObjectTextureGlobal [0, "skins\car\taxi.paa"];
 hint parseText (_taxiangekommen);
 sleep 5;
 waitUntil {vehicle player != player};
