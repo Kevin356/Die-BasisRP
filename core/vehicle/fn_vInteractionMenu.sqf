@@ -70,6 +70,10 @@ if(playerSide == independent) then {
 	_Btn9 ctrlShow true;
 	_Btn9 ctrlSetText "Tüv entziehen";
 	_Btn9 buttonSetAction "[life_vInact_curTarget] call life_fnc_removeCheckDate;";
+	
+	_Btn6 ctrlShow true;
+	_Btn6 ctrlSetText localize "STR_vInAct_Registration";
+	_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 };
 
 if(playerSide == west) then {
