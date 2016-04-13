@@ -28,6 +28,13 @@ class Life_Client_Core
 		class welcomeNotification {};
 	};
 
+	class Adac 
+	{
+		file = "core\adac";
+		class getCheckDate {};
+		class removeCheckDate {};
+		class setCheckDate {};
+	};
 
 	class MiniGames
 	{
