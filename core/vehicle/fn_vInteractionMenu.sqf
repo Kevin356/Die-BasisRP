@@ -63,13 +63,13 @@ if((playerSide == independent) && license_med_adac && {speed _curTarget == 0} &&
 	_Btn5 ctrlSetText "Abschleppen";
 	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
 	
-	_Btn9 ctrlShow true;
-	_Btn9 ctrlSetText "Tüv vergeben";
-	_Btn9 buttonSetAction "[life_vInact_curTarget] call life_fnc_setCheckDate;";
-	
 	_Btn8 ctrlShow true;
-	_Btn8 ctrlSetText "Tüv entziehen";
-	_Btn8 buttonSetAction "[life_vInact_curTarget] call life_fnc_removeCheckDate;";
+	_Btn8 ctrlSetText "Tüv vergeben";
+	_Btn8 buttonSetAction "[life_vInact_curTarget] call life_fnc_setCheckDate;";
+	
+	_Btn9 ctrlShow true;
+	_Btn9 ctrlSetText "Tüv entziehen";
+	_Btn9 buttonSetAction "[life_vInact_curTarget] call life_fnc_removeCheckDate;";
 };
 
 if(playerSide == west) then {
