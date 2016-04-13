@@ -71,9 +71,9 @@ if(playerSide == independent) then {
 	_Btn9 ctrlSetText "Tüv entziehen";
 	_Btn9 buttonSetAction "[life_vInact_curTarget] call life_fnc_removeCheckDate;";
 	
-	_Btn6 ctrlShow true;
-	_Btn6 ctrlSetText localize "STR_vInAct_Registration";
-	_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
+	_Btn4 ctrlShow true;
+	_Btn4 ctrlSetText localize "STR_vInAct_Registration";
+	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 };
 
 if(playerSide == west) then {
@@ -136,7 +136,7 @@ if(playerSide == west) then {
 		_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
 		if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 	} else {
-		_Btn4 ctrlShow false;
+	
 	};
 	
 	if(typeOf _curTarget == "O_Truck_03_device_F") then {
