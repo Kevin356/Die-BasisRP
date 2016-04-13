@@ -93,7 +93,12 @@ life_vehicles pushBack _vehicle;
 if(_mode) then {
 	if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {
 		[[(getPlayerUID player),playerSide,_vehicle,_colorIndex],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
+		sleep 5;
+		[[0, _vehicle], "TON_fnc_handleCheckDate", false, false] spawn life_fnc_MP;
 	};
+} else {
+	_vehicle setVariable["rentalVehicle",true,true];
+	_vehicle setVariable["checkdate","rentalVehicle",true];
 };
 
 [0] call SOCK_fnc_updatePartial;

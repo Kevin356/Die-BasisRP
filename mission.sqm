@@ -132,7 +132,14 @@ class Mission
 		"A3_Structures_F_EPC_Civ_PlayGround",
 		"A3_Structures_F_Civ_PlayGround",
 		"A3_Structures_F_Research",
-		"A3_Structures_F_EPB_Furniture"
+		"A3_Structures_F_EPB_Furniture",
+		"A3_Weapons_F_Vests",
+		"a3_weapons_f",
+		"A3_Weapons_F_CSAT",
+		"A3_Structures_F_Items_Luggage",
+		"A3_Structures_F_EPB_Items_Military",
+		"A3_Structures_F_EPA_Items_Vessels",
+		"A3_Structures_F_EPA_Items_Tools"
 	};
 	addOnsAuto[]=
 	{
@@ -245,6 +252,13 @@ class Mission
 		"A3_Signs_F_AD",
 		"A3_Structures_F_Research",
 		"A3_Structures_F_EPB_Furniture",
+		"A3_Weapons_F_Vests",
+		"a3_weapons_f",
+		"A3_Weapons_F_CSAT",
+		"A3_Structures_F_Items_Luggage",
+		"A3_Structures_F_EPB_Items_Military",
+		"A3_Structures_F_EPA_Items_Vessels",
+		"A3_Structures_F_EPA_Items_Tools",
 		"a3_map_altis"
 	};
 	randomSeed=2004553;
@@ -6309,7 +6323,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5319;
+		items=5379;
 		class Item0
 		{
 			position[]={8087.8345,77.665977,22619.818};
@@ -59217,10 +59231,673 @@ class Mission
 			skill=0.40000001;
 			init="this setpos [3637.386, 13080.945, 9.5367432e-007];this allowdamage false;";
 		};
+		class Item5319
+		{
+			position[]={11692.99,37.645195,15919.094};
+			azimut=269.63101;
+			offsetY=0.53802103;
+			id=5670;
+			side="EMPTY";
+			vehicle="Land_Atm_01_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+		};
+		class Item5320
+		{
+			position[]={11683.091,37.615089,15912.394};
+			azimut=0.026865199;
+			offsetY=3.8996999;
+			id=5671;
+			side="EMPTY";
+			vehicle="Land_Pallet_MilBoxes_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this addAction[""Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Gang Armament""];";
+		};
+		class Item5321
+		{
+			position[]={11677.79,37.627342,15913.294};
+			azimut=180.03101;
+			offsetY=3.86322;
+			id=5672;
+			side="EMPTY";
+			vehicle="Land_WoodenTable_large_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5322
+		{
+			position[]={11678.19,37.750626,15918.993};
+			azimut=0.0115331;
+			offsetY=3.7370801;
+			id=5673;
+			side="EMPTY";
+			vehicle="Land_Sink_F";
+			skill=0.60000002;
+			text="mari_processor";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Process Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); life_inv_cannabis > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Marijuana Processing""];";
+		};
+		class Item5323
+		{
+			position[]={11677.891,37.627205,15913.294};
+			azimut=89.404602;
+			offsetY=4.7279301;
+			id=5674;
+			side="EMPTY";
+			vehicle="Vest_V_TacVest_blk";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5324
+		{
+			position[]={11681.69,37.758472,15919.993};
+			azimut=269.68701;
+			offsetY=3.7525699;
+			id=5675;
+			side="EMPTY";
+			vehicle="Land_WoodenTable_small_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5325
+		{
+			position[]={11694.591,37.645576,15920.693};
+			azimut=359.97101;
+			offsetY=1.22691;
+			id=5676;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5326
+		{
+			position[]={11678.69,37.804546,15920.794};
+			azimut=359.478;
+			offsetY=4.7951598;
+			id=5677;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5327
+		{
+			position[]={11681.591,37.777718,15920.794};
+			azimut=358.32501;
+			offsetY=4.7707901;
+			id=5678;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5328
+		{
+			position[]={11679.49,37.800121,15920.794};
+			azimut=358.94101;
+			offsetY=4.7756;
+			id=5679;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5329
+		{
+			position[]={11696.79,37.651443,15920.794};
+			azimut=0.0090809297;
+			offsetY=1.2211699;
+			id=5680;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5330
+		{
+			position[]={11676.99,37.816257,15918.794};
+			azimut=270.06201;
+			offsetY=4.6560998;
+			id=5681;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5331
+		{
+			position[]={11693.99,37.644394,15920.693};
+			azimut=0.0175559;
+			offsetY=1.22815;
+			id=5682;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5332
+		{
+			position[]={11682.49,37.768127,15920.794};
+			azimut=1.94023;
+			offsetY=4.82166;
+			id=5683;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5333
+		{
+			position[]={11697.591,37.653576,15920.794};
+			azimut=0.037401401;
+			offsetY=1.2189;
+			id=5684;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5334
+		{
+			position[]={11677.591,37.785973,15920.094};
+			azimut=278.24301;
+			offsetY=3.72158;
+			id=5685;
+			side="EMPTY";
+			vehicle="Land_Sack_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5335
+		{
+			position[]={11677.891,37.626404,15912.693};
+			azimut=273.254;
+			offsetY=4.7287002;
+			id=5686;
+			side="EMPTY";
+			vehicle="Weapon_arifle_Katiba_C_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5336
+		{
+			position[]={11683.391,37.742622,15920.094};
+			azimut=207.10001;
+			offsetY=3.7511599;
+			id=5687;
+			side="EMPTY";
+			vehicle="Land_Portable_generator_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5337
+		{
+			position[]={11677.49,37.710827,15917.594};
+			azimut=235.589;
+			offsetY=3.75085;
+			id=5688;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5338
+		{
+			position[]={11683.391,37.733574,15919.693};
+			azimut=204.043;
+			offsetY=3.76085;
+			id=5689;
+			side="EMPTY";
+			vehicle="Land_ExtensionCord_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5339
+		{
+			position[]={11682.29,37.75436,15920.094};
+			azimut=269.742;
+			offsetY=4.6174798;
+			id=5690;
+			side="EMPTY";
+			vehicle="Land_Suitcase_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5340
+		{
+			position[]={11677.29,37.659512,15912.394};
+			azimut=74.511002;
+			offsetY=4.6682401;
+			id=5691;
+			side="EMPTY";
+			vehicle="Land_Ammobox_rounds_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5341
+		{
+			position[]={11677.99,37.628143,15914.094};
+			azimut=107.976;
+			offsetY=4.7270298;
+			id=5692;
+			side="EMPTY";
+			vehicle="Land_Ammobox_rounds_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5342
+		{
+			position[]={11678.19,37.627739,15913.993};
+			azimut=88.826698;
+			offsetY=4.7274399;
+			id=5693;
+			side="EMPTY";
+			vehicle="Land_Ammobox_rounds_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5343
+		{
+			position[]={11681.49,37.769703,15920.394};
+			azimut=4.7138801;
+			offsetY=4.61727;
+			id=5694;
+			side="EMPTY";
+			vehicle="Land_TinContainer_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5344
+		{
+			position[]={11681.091,37.776203,15920.493};
+			azimut=29.730801;
+			offsetY=4.6173301;
+			id=5695;
+			side="EMPTY";
+			vehicle="Land_ButaneTorch_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5345
+		{
+			position[]={11681.591,37.757298,15919.894};
+			azimut=281.24701;
+			offsetY=4.61731;
+			id=5696;
+			side="EMPTY";
+			vehicle="Land_GasCooker_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5346
+		{
+			position[]={11681.99,37.76437,15920.394};
+			azimut=6.4974499;
+			offsetY=4.61724;
+			id=5697;
+			side="EMPTY";
+			vehicle="Land_GasCanister_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5347
+		{
+			position[]={11692.391,37.548744,15904.094};
+			offsetY=-0.0107651;
+			id=5698;
+			side="EMPTY";
+			vehicle="FlagPole_F";
+			skill=0.60000002;
+			text="gang_flag_1";
+			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+		};
+		class Item5348
+		{
+			position[]={11695.891,37.649044,15920.394};
+			azimut=359.97;
+			offsetY=0.53438199;
+			id=5699;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V1_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""Gang Market"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
+		};
+		class Item5349
+		{
+			position[]={18384.828,27.051889,15244.111};
+			azimut=440.17065;
+			offsetY=0.53802103;
+			id=5700;
+			side="EMPTY";
+			vehicle="Land_Atm_01_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+		};
+		class Item5350
+		{
+			position[]={18393.488,27.085384,15252.335};
+			azimut=170.56599;
+			offsetY=3.8996999;
+			id=5701;
+			side="EMPTY";
+			vehicle="Land_Pallet_MilBoxes_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this addAction[""Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Gang Armament""];";
+		};
+		class Item5351
+		{
+			position[]={18398.861,27.062004,15252.316};
+			azimut=350.5708;
+			offsetY=3.86322;
+			id=5702;
+			side="EMPTY";
+			vehicle="Land_WoodenTable_large_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5352
+		{
+			position[]={18399.404,27.027184,15246.637};
+			azimut=170.55099;
+			offsetY=3.7370801;
+			id=5703;
+			side="EMPTY";
+			vehicle="Land_Sink_F";
+			skill=0.60000002;
+			text="heroin_processor";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Process Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_heroinu > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Heroin Processing""];";
+		};
+		class Item5353
+		{
+			position[]={18398.764,27.062464,15252.302};
+			azimut=259.94434;
+			offsetY=4.7279301;
+			id=5704;
+			side="EMPTY";
+			vehicle="Vest_V_TacVest_blk";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5354
+		{
+			position[]={18396.129,27.028103,15245.065};
+			azimut=440.22665;
+			offsetY=3.7525699;
+			id=5705;
+			side="EMPTY";
+			vehicle="Land_WoodenTable_small_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5355
+		{
+			position[]={18383.514,27.048264,15242.253};
+			azimut=530.51038;
+			offsetY=1.22691;
+			id=5706;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5356
+		{
+			position[]={18399.217,27.003551,15244.773};
+			azimut=530.01733;
+			offsetY=4.7951598;
+			id=5707;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5357
+		{
+			position[]={18396.348,27.017778,15244.302};
+			azimut=528.86438;
+			offsetY=4.7707901;
+			id=5708;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5358
+		{
+			position[]={18398.428,27.008163,15244.632};
+			azimut=529.48035;
+			offsetY=4.7756;
+			id=5709;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5359
+		{
+			position[]={18381.352,27.052031,15241.804};
+			azimut=170.54871;
+			offsetY=1.2211699;
+			id=5710;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5360
+		{
+			position[]={18400.57,27.026693,15247.026};
+			azimut=440.60165;
+			offsetY=4.6560998;
+			id=5711;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5361
+		{
+			position[]={18384.102,27.045,15242.352};
+			azimut=170.55719;
+			offsetY=1.22815;
+			id=5712;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5362
+		{
+			position[]={18395.465,27.020605,15244.146};
+			azimut=172.47986;
+			offsetY=4.82166;
+			id=5713;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5363
+		{
+			position[]={18380.57,27.050138,15241.673};
+			azimut=170.57703;
+			offsetY=1.2189;
+			id=5714;
+			side="EMPTY";
+			vehicle="Land_Pallet_vertical_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5364
+		{
+			position[]={18400.17,27.00856,15245.646};
+			azimut=448.78265;
+			offsetY=3.72158;
+			id=5715;
+			side="EMPTY";
+			vehicle="Land_Sack_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5365
+		{
+			position[]={18398.67,27.065325,15252.891};
+			azimut=443.79364;
+			offsetY=4.7287002;
+			id=5716;
+			side="EMPTY";
+			vehicle="Weapon_arifle_Katiba_C_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5366
+		{
+			position[]={18394.459,27.032427,15244.684};
+			azimut=377.63968;
+			offsetY=3.7511599;
+			id=5717;
+			side="EMPTY";
+			vehicle="Land_Portable_generator_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5367
+		{
+			position[]={18399.871,27.039801,15248.11};
+			azimut=406.12869;
+			offsetY=3.75085;
+			id=5718;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5368
+		{
+			position[]={18394.406,27.037622,15245.093};
+			azimut=374.58267;
+			offsetY=3.76085;
+			id=5719;
+			side="EMPTY";
+			vehicle="Land_ExtensionCord_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5369
+		{
+			position[]={18395.563,27.028845,15244.875};
+			azimut=440.28165;
+			offsetY=4.6174798;
+			id=5720;
+			side="EMPTY";
+			vehicle="Land_Suitcase_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5370
+		{
+			position[]={18399.213,27.064007,15253.286};
+			azimut=245.05072;
+			offsetY=4.6682401;
+			id=5721;
+			side="EMPTY";
+			vehicle="Land_Ammobox_rounds_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5371
+		{
+			position[]={18398.805,27.059019,15251.494};
+			azimut=278.51575;
+			offsetY=4.7270298;
+			id=5722;
+			side="EMPTY";
+			vehicle="Land_Ammobox_rounds_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5372
+		{
+			position[]={18398.592,27.060448,15251.568};
+			azimut=259.36642;
+			offsetY=4.7274399;
+			id=5723;
+			side="EMPTY";
+			vehicle="Land_Ammobox_rounds_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5373
+		{
+			position[]={18396.396,27.022346,15244.705};
+			azimut=175.25349;
+			offsetY=4.61727;
+			id=5724;
+			side="EMPTY";
+			vehicle="Land_TinContainer_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5374
+		{
+			position[]={18396.797,27.019857,15244.676};
+			azimut=200.27042;
+			offsetY=4.6173301;
+			id=5725;
+			side="EMPTY";
+			vehicle="Land_ButaneTorch_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5375
+		{
+			position[]={18396.203,27.029009,15245.174};
+			azimut=451.78665;
+			offsetY=4.61731;
+			id=5726;
+			side="EMPTY";
+			vehicle="Land_GasCooker_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5376
+		{
+			position[]={18395.895,27.023968,15244.617};
+			azimut=177.03708;
+			offsetY=4.61724;
+			id=5727;
+			side="EMPTY";
+			vehicle="Land_GasCanister_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item5377
+		{
+			position[]={18382.957,27.124716,15258.994};
+			azimut=170.53999;
+			offsetY=-0.0107651;
+			id=5728;
+			side="EMPTY";
+			vehicle="FlagPole_F";
+			skill=0.60000002;
+			text="gang_flag_3";
+			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+		};
+		class Item5378
+		{
+			position[]={18382.178,27.055576,15242.336};
+			azimut=530.50897;
+			offsetY=0.53438199;
+			id=5729;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V1_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""Gang Market"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
+		};
 	};
 	class Markers
 	{
-		items=372;
+		items=374;
 		class Item0
 		{
 			position[]={8471.8662,106.60769,25129.486};
@@ -62185,6 +62862,23 @@ class Mission
 			name="tank_1_2_1";
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
+		};
+		class Item372
+		{
+			position[]={11693.477,37.651653,15914.737};
+			name="gang_area_1";
+			text="Gang Versteck";
+			type="hd_warning";
+			colorName="ColorRed";
+		};
+		class Item373
+		{
+			position[]={18383.648,27.093267,15248.315};
+			name="gang_area_3";
+			text="Gang Versteck";
+			type="hd_warning";
+			colorName="ColorRed";
+			angle=2.8;
 		};
 	};
 	class Sensors

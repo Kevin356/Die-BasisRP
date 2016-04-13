@@ -12,6 +12,10 @@
 #define Btn4 37453
 #define Btn5 37454
 #define Btn6 37455
+#define Btn7 37456
+#define Btn8 37457
+#define Btn9 37458
+#define Btn10 37459
 #define Title 37401
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
 if(!dialog) then {
@@ -29,11 +33,22 @@ _Btn3 = _display displayCtrl Btn3;
 _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
+_Btn7 = _display displayCtrl Btn7;
+_Btn8 = _display displayCtrl Btn8;
+_Btn9 = _display displayCtrl Btn9;
+_Btn10 = _display displayCtrl Btn10;
 life_vInact_curTarget = _curTarget;
+
+_Btn8 ctrlShow false;
+_Btn9 ctrlShow false;
+_Btn10 ctrlShow false;
 
 //Set Repair Action
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
+
+_Btn7 ctrlSetText "Tüv anzeigen";
+_Btn7 buttonSetAction "[life_vInact_curTarget] call life_fnc_getCheckDate;";
 
 if("ToolKit" in (items player)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
@@ -45,16 +60,18 @@ if ((playerSide == civilian) && typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kar
 };
 
 //Abschleppen für den ADAC
-if(playerSide == independent) then {
+if((playerSide == independent) && license_med_adac && {speed _curTarget == 0} && _curTarget in life_vehicles) then {
 	_Btn5 ctrlShow true;
 	_Btn5 ctrlSetText "Abschleppen";
 	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
 	
-	_Btn3 ctrlShow true;
-	_Btn3 ctrlSetText localize "Besitzer";
-	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
-
+	_Btn9 ctrlShow true;
+	_Btn9 ctrlSetText "Tüv vergeben";
+	_Btn9 buttonSetAction "[life_vInact_curTarget] call life_fnc_setCheckDate;";
 	
+	_Btn8 ctrlShow true;
+	_Btn8 ctrlSetText "Tüv entziehen";
+	_Btn8 buttonSetAction "[life_vInact_curTarget] call life_fnc_removeCheckDate;";
 };
 
 if(playerSide == west) then {
@@ -87,6 +104,10 @@ if(playerSide == west) then {
 		};
 	};
 	
+	_Btn9 ctrlShow true;
+	_Btn9 ctrlSetText "Tüv entziehen";
+	_Btn9 buttonSetAction "[life_vInact_curTarget] call life_fnc_removeCheckDate;";
+	
 } else {
 	
 	if(_curTarget isKindOf "Ship") then {
@@ -114,7 +135,6 @@ if(playerSide == west) then {
 		if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 	} else {
 		_Btn4 ctrlShow false;
-		_Btn5 ctrlShow false;
 	};
 	
 	if(typeOf _curTarget == "O_Truck_03_device_F") then {

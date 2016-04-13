@@ -82,5 +82,6 @@ if(!_isVehicle) then {
 		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
+		[[_curTarget, "caralarm"], "life_fnc_say3D", true, false] spawn life_fnc_MP;
 	};
 };
