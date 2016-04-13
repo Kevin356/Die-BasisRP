@@ -5,8 +5,6 @@
 	Description:
 	Opens & initializes the chop shop menu.
 */
-if(life_action_inUse) exitWith {hintSilent "Du machst schon etwas.."};
-life_action_inUse = true;
 disableSerialization;
 private["_nearVehicles","_control"];
 _nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Truck","Air"],25];
@@ -33,8 +31,3 @@ _control = ((findDisplay 39400) displayCtrl 39402);
 		};
 	};
 } foreach _nearVehicles;
-
-[] spawn {
-	waitUntil{isNull (findDisplay 39400)};
-	life_action_inUse = false;
-};
