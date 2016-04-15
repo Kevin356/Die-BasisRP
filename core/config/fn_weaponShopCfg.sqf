@@ -249,7 +249,7 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_mag",nil,125],		//MXC Magazine
 						["30Rnd_65x39_caseless_mag_Tracer",Gummiegeschoss,125],//MXC Magazine Tracer
 						["HandGrenade_Stone","Flashbang",1700],		//Blendgranate
-						["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
+						//["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
 						["SmokeShellOrange","Rauchgranaten",2000],	//Rauchgranaten
 						["SmokeShellYellow",nil,125],				//Smoke Gelb
 						["SmokeShellRed",nil,125],					//Smoke Rot
@@ -317,7 +317,7 @@ switch(_shop) do
 						["100Rnd_65x39_caseless_mag_Tracer",nil,200],//MX SW 100 Tracer
 						["20Rnd_762x51_Mag",nil,250],				//MK18 Magazine
 						["HandGrenade_Stone","Flashbang",1700],		//Blendgranate
-						["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
+						//["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
 						["SmokeShellOrange","Rauchgranaten",2000],	//Rauchgranaten
 						["SmokeShellYellow",nil,125],				//Smoke Gelb
 						["SmokeShellRed",nil,125],					//Smoke Rot
@@ -389,7 +389,7 @@ switch(_shop) do
 						["100Rnd_65x39_caseless_mag_Tracer",nil,200],//MX SW 100 Tracer
 						["20Rnd_762x51_Mag",nil,250],				//MK18 Magazine
 						["HandGrenade_Stone","Flashbang",1700],		//Blendgranate
-						["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
+						//["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
 						["SmokeShellOrange","Rauchgranaten",2000],	//Rauchgranaten
 						["SmokeShellYellow",nil,125],				//Smoke Gelb
 						["SmokeShellRed",nil,125],					//Smoke Rot
@@ -464,7 +464,7 @@ switch(_shop) do
 						["100Rnd_65x39_caseless_mag_Tracer",nil,200],//MX SW 100 Tracer
 						["20Rnd_762x51_Mag",nil,250],				//MK18 Magazine
 						["HandGrenade_Stone","Flashbang",1700],		//Blendgranate
-						["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
+						//["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
 						["SmokeShellOrange","Rauchgranaten",2000],	//Rauchgranaten
 						["SmokeShellYellow",nil,125],				//Smoke Gelb
 						["SmokeShellRed",nil,125],					//Smoke Rot
@@ -540,7 +540,7 @@ switch(_shop) do
 						["100Rnd_65x39_caseless_mag_Tracer",nil,200],//MX SW 100 Tracer
 						["20Rnd_762x51_Mag",nil,250],				//MK18 Magazine
 						["HandGrenade_Stone","Flashbang",1700],		//Blendgranate
-						["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
+						//["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
 						["SmokeShellOrange","Rauchgranaten",2000],	//Rauchgranaten
 						["SmokeShellYellow",nil,125],				//Smoke Gelb
 						["SmokeShellRed",nil,125],					//Smoke Rot
@@ -616,7 +616,7 @@ switch(_shop) do
 						["100Rnd_65x39_caseless_mag_Tracer",nil,200],//MX SW 100 Tracer
 						["20Rnd_762x51_Mag",nil,250],				//MK18 Magazine
 						["HandGrenade_Stone","Flashbang",1700],		//Blendgranate
-						["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
+						//["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
 						["SmokeShellOrange","Rauchgranaten",2000],	//Rauchgranaten
 						["SmokeShellYellow",nil,125],				//Smoke Gelb
 						["SmokeShellRed",nil,125],					//Smoke Rot
@@ -692,7 +692,7 @@ switch(_shop) do
 						["100Rnd_65x39_caseless_mag_Tracer",nil,200],//MX SW 100 Tracer
 						["20Rnd_762x51_Mag",nil,250],				//MK18 Magazine
 						["HandGrenade_Stone","Flashbang",1700],		//Blendgranate
-						["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
+						//["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
 						["SmokeShellOrange","Rauchgranaten",2000],	//Rauchgranaten
 						["SmokeShellYellow",nil,125],				//Smoke Gelb
 						["SmokeShellRed",nil,125],					//Smoke Rot
@@ -774,7 +774,7 @@ switch(_shop) do
 						["10Rnd_338_Mag",nil,250],					//MAR 10 Magazine
 						["RPG32_F","Destroyermuni",5000],			//Granatenwerfer Munition
 						["HandGrenade_Stone","Flashbang",1700],		//Blendgranate
-						["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
+						//["SmokeShellBlue","CE-Gas",2000],			//CE-Gas
 						["SmokeShellOrange","Rauchgranaten",2000],	//Rauchgranaten
 						["SmokeShellYellow",nil,125],				//Smoke Gelb
 						["SmokeShellRed",nil,125],					//Smoke Rot
