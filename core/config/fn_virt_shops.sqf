@@ -14,7 +14,7 @@ switch (_shop) do
 	case "rebel": {["Rebel Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle","henrap","roosterrap","goatrap","sheeprap","rabbitrap"]]};
-	case "coffee": {["Stratis Coffee Club",["coffee","donuts"]]};
+	case "coffee": {["Schwarzmarkt",["coffee"]]};
 	case "heroin": {["Drug Dealer",["cocainep","heroinp","marijuana","methp"]]};
 	case "fishmarket": {["Altis Fish Market",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "glass": {["Altis Glass Dealer",["glass"]]};
@@ -27,6 +27,6 @@ switch (_shop) do
 	case "pharmacy": {["Apotheke",["painkillers","morphium","scalpel","kidney"]]};
 	case "medic": {["Arztbedarf",["apple","donuts","coffee","battery","redgull","fuelF","painkillers"]]};
 	case "speakeasy": {["Speakeasy's",["bottledshine","schwarz","wodka","wein","bier","moonshine"]]};
-	case "bar": {["The Lounge",["bottles","cornmeal"]]};
+	case "bar": {["The Lounge",["bottles","cornmeal","artep"]]};
 	case "uranium": {["Marchand Uranium",["uranium","puranium"]]};
 };

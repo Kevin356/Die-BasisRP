@@ -11,6 +11,7 @@ if(_type == "") exitWith {-1};
 
 switch (_type) do
 {
+    case "arte": {120000}; //Preis für Artefakt Lizenz
     case "schwarz": {10000}; //Preis für Schwarzbrenner Lizenz
 	case "wodka": {10000}; //Preis Wodka Herstellungs Lizenz
 	case "wein": {10000}; //Preis Wein Herstellungs Lizenz

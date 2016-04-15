@@ -134,6 +134,8 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 
 life_inv_items =
 [
+    "life_inv_arteu",
+	"life_inv_artep",
     "life_inv_bier",
 	"life_inv_wein",
 	"life_inv_wodka",
@@ -251,6 +253,7 @@ life_inv_items =
 //Licenses [license var, civ/cop]
 life_licenses =
 [
+    ["license_civ_arte","civ"],
     ["license_civ_bier","civ"],
 	["license_civ_wodka","civ"],
 	["license_civ_schwarz","civ"],
@@ -307,7 +310,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",2500],["lockpick",2500],["heroinp",5000],["cocaine",3000],["cocainep",6000],["methu",4000],["methp",8000],["marijuana",3500],["ipuranium",10000],["turtle",5000],["blastingcharge",10000],
+life_illegal_items = [["heroinu",2500],["artep",6000],["arteu",3000],["lockpick",2500],["heroinp",5000],["cocaine",3000],["cocainep",6000],["methu",4000],["methp",8000],["marijuana",3500],["ipuranium",10000],["turtle",5000],["blastingcharge",10000],
 ["moonshine",6500],["boltcutter",1000],["bottledshine",6500],["kidney",12500],["scalpel",5000],["mash",6500],["spikeStrip",1500]];
 
 
@@ -316,6 +319,8 @@ life_illegal_items = [["heroinu",2500],["lockpick",2500],["heroinp",5000],["coca
 */
 sell_array =
 [
+    ["arteu",500],
+	["artep",500],
     ["bier",500],
 	["wein",500],
 	["wodka",500],

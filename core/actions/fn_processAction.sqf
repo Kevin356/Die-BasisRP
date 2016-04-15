@@ -14,6 +14,7 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {
+    case "arte": {["arteu","artep",1000,"Artefakte Reinigen"]};
     case "wodka": {["roggen","wodka",500,"Wodka Herstellen"]};
 	case "bier": {["hefe","bier",500,"Bier Herstellen"]};
 	case "schwarz": {["hopfen","schwarz",500,"Schwarzgebrannter Herstellen"]};

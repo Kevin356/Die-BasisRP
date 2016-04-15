@@ -12,6 +12,8 @@ if(_var == "") exitWith {""};
 
 switch (_var) do
 {
+    case "life_inv_arteu": {"Algige Artefakte"};
+	case "life_inv_artep": {"Saubere Artefakte"};
     case "life_inv_bier": {"Bier"};
 	case "life_inv_wodka": {"Wodka"};
 	case "life_inv_wein": {"Wein"};
@@ -120,6 +122,7 @@ switch (_var) do
 	case "life_inv_scalpel": {"Scalpel"};
 	
 	//License Block
+	case "license_civ_arte": {"Artefakt Lizenz"};
 	case "license_civ_wein": {"Weinverarbeitungs Lizenz"};
 	case "license_civ_schwarz": {"Schwarzbrenner Lizenz"};
 	case "license_civ_wodka": {"Wodkaverarbeitungs Lizenz"};

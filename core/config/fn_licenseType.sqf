@@ -16,6 +16,7 @@ switch (_mode) do
 	{
 		switch (_type) do
 		{
+		    case "arte": {_var = "license_civ_arte"};
 		    case "wein": {_var = "license_civ_wein"};
 			case "schwarz": {_var = "license_civ_schwarz"};
 			case "wodka": {_var = "license_civ_wodka"};
@@ -86,6 +87,7 @@ switch (_mode) do
 	{
 		switch (_type) do
 		{
+		    case "license_civ_arte": {_var = "arte"};
 		    case "license_civ_wein": {_var = "wein"};
 			case "license_civ_schwarz": {_var = "schwarz"};
 			case "license_civ_wodka": {_var = "wodka"};

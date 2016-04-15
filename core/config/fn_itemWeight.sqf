@@ -11,6 +11,8 @@ if(_item == "") exitWith {};
 
 switch (_item) do
 {
+    case "arteu": {9};
+	case "artep": {6};
     case "bier": {2};
 	case "wodka": {2};
 	case "wein": {2};

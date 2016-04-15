@@ -946,6 +946,64 @@ switch(_shop) do
 		};
 	};
 	
+	case "gang":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			default
+			{
+				["Hideout Armament",
+					[
+						["Rangefinder",nil,5000],					//Entfernungsmesser
+						["NVGoggles_INDEP",nil,2500],				//Nachtsichtgerät
+						["arifle_Katiba_F",nil,200000],				//Katiba
+						["SMG_01_F",nil,90000],						//Vermin
+						["arifle_SDAR_F",nil,150000],				//SDAR
+						["arifle_TRG20_F",nil,150000],				//TRG20
+						["arifle_MXC_F",nil,250000],				//MXC
+						["arifle_MX_F",nil,300000],					//MX
+						["arifle_MXM_F",nil,450000],				//MXM
+						["srifle_DMR_03_khaki_F",nil,450000],		//MK1 EMR
+						//["srifle_DMR_03_tan_F",nil,450000],		//MK1 EMR
+						["srifle_DMR_03_multicam_F",nil,450000],	//MK1 EMR
+						["srifle_DMR_03_woodland_F",nil,450000],	//MK1 EMR
+						["srifle_DMR_01_F",nil,450000],				//Rahim
+						["srifle_DMR_06_camo_F",nil,450000],		//MK14
+						["srifle_DMR_02_camo_F",nil,600000],		//MAR 10
+						["optic_ACO_grn",nil,7500],					//ACO Visier
+						["optic_Holosight_smg",nil,7500],			//Holosight Visier
+						["optic_Arco",nil,25000],					//ARCO Visier
+						["optic_Hamr",nil,25000],					//RCO Visier
+						["optic_MRCO",nil,25000],					//MRCO Visier
+						["optic_DMS",nil,120000],					//DMS Visier
+						["optic_AMS",nil,120000],					//AMS Visier
+						["optic_KHS_blk",nil,120000],				//Kahila Visier
+						["optic_SOS",nil,160000],					//SOS Visier
+						["optic_LRPS",nil,160000],					//LRPS Visier
+						["optic_NVS",nil,200000],					//NVS Visier
+						["30Rnd_65x39_caseless_green",nil,1000],	//Katiba Magazine
+						["30Rnd_45ACP_Mag_SMG_01",nil,1000],		//Vermin Magazine
+						["20Rnd_556x45_UW_mag",nil,1500],			//SDAR Magazine
+						["30Rnd_556x45_Stanag",nil,1750],			//TRG20 Magazine
+						["30Rnd_65x39_caseless_mag",nil,1000],		//MX Magazine
+						["20Rnd_762x51_Mag",nil,3000],				//MK Magazine
+						["10Rnd_762x54_Mag",nil,3000],				//Rahim Magazine
+						["10Rnd_338_Mag",nil,10000],				//MAR10 Magazine
+						["acc_flashlight",nil,3000],				//Taschenlampe
+						//["muzzle_snds_acp",nil,200000],			//Schalldämpfer 45 ACP
+						//["muzzle_snds_L",nil,200000],				//Schalldämpfer 9mm
+						//["muzzle_snds_M",nil,200000],				//Schalldämpfer 5.56mm
+						//["muzzle_snds_H",nil,200000],				//Schalldämpfer 6.5mm
+						//["muzzle_snds_B",nil,200000],				//Schalldämpfer 7.62mm
+						["bipod_01_F_blk",nil,100000],				//Nato Schwarz
+						["bipod_01_F_snd",nil,100000]				//Nato Sand
+					]
+				];
+			};
+		};
+	};
+	
 	case "gun":
 	{
 		switch(true) do

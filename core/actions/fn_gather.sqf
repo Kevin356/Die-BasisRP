@@ -7,7 +7,7 @@
 */
 if(isNil "life_action_gathering") then {life_action_gathering = false;};
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
-_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","cocaine_2","weed_1","trauben","roggen","hefe","hopfen","meth_1","baumwolle_1","wood_1","reifen_1"];
+_resourceZones = ["arte_2","arte","apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","cocaine_2","weed_1","trauben","roggen","hefe","hopfen","meth_1","baumwolle_1","wood_1","reifen_1"];
 _zone = "";
 
 if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
@@ -36,6 +36,7 @@ switch(true) do {
 	case (_zone in ["baumwolle_1"]): {_gather = "baumwolleu"; _val = 1 + (round random 4);};
 	case (_zone in ["hefe"]): {_gather = "hefe"; _val = 1 + (round random 5);};
 	case (_zone in ["hopfen"]): {_gather = "hopfen"; _val = 1 + (round random 6);};
+	case (_zone in ["arte","arte_2"]): {_gather = "arteu"; _val = 1 + (round random 3);};
 	default {""};
 };
 //gather check??
