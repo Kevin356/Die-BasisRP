@@ -59,6 +59,7 @@ player createDiarySubject ["controls","Steuerung"];
 					Heroin Feld->Heroin Küche->Drogen Dealer<br/>
 					Schildkröten Im Meer Fangen->Schildkröten Händler<br/>
 					Uranium Mine->Uranium I,II,III->Uranium Verkäufer<br/>
+					Artefakte->Artefakt Reinigung->Schwarzmarkt<br/>
 				"
 		]
 	];

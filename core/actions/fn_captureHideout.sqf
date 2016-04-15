@@ -11,7 +11,7 @@ _group = _hideout getVariable ["gangOwner",grpNull];
 
 if(isNil {grpPlayer getVariable "gang_name"}) exitWith {titleText[localize "STR_GNOTF_CreateGang","PLAIN"];};
 if(_group == grpPlayer) exitWith {titleText[localize "STR_GNOTF_Controlled","PLAIN"]};
-if((_hideout getVariable ["inCapture",FALSE])) exitWith {hintSilent localize "STR_GNOTF_Captured";};
+if((_hideout getVariable ["inCapture",FALSE])) exitWith {hint localize "STR_GNOTF_Captured";};
 if(!isNull _group) then {
 	_gangName = _group getVariable ["gang_name",""];
 	_action = [
@@ -83,5 +83,24 @@ _flagTexture = [
 	] call BIS_fnc_selectRandom;
 _this select 0 setFlagTexture _flagTexture;
 [[[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+
+    // CREATE MARKER AT MAP+
+	
+	_markername = str(getPos _hideout);
+	_gangname2 = formatText ["Eingenommen von: (%1)",(group player) getVariable "gang_name"];
+	if (getMarkerColor _markername == "") then
+	{
+	gang_owner_marker = createMarker [_markername, position player];
+	_markername setMarkerShape "ICON";
+	_markername setMarkerType "hd_warning";
+	_markername SetMarkerColor "ColorRed";
+	_markername setMarkerText str(_gangname2);
+	gang_owner_marker = "";
+	}
+	else
+	{
+	_markername setMarkerText str(_gangname2);
+	};
+
 _hideout setVariable["inCapture",false,true];
 _hideout setVariable["gangOwner",grpPlayer,true];

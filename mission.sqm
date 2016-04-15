@@ -6332,7 +6332,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Schwarzmarkt"",life_fnc_virt_menu,""bar""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Schwarzmarkt"",life_fnc_virt_menu,""coffee""];";
 				};
 			};
 		};
@@ -62914,7 +62914,7 @@ class Mission
 		};
 		class Item375
 		{
-			position[]={13696.471,15.718008,12346.12};
+			position[]={15214.687,0,14260.87};
 			name="arte";
 			text="Artefakte";
 			type="mil_dot";
@@ -62924,7 +62924,7 @@ class Mission
 		};
 		class Item376
 		{
-			position[]={13696.824,16.203953,12344.364};
+			position[]={15215.04,0,14259.114};
 			name="arte_1";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -62936,7 +62936,7 @@ class Mission
 		};
 		class Item377
 		{
-			position[]={13252.718,18.978317,11739.536};
+			position[]={15529.566,0,12236.022};
 			name="arte_2";
 			text="Artefakte";
 			type="mil_dot";
@@ -62946,7 +62946,7 @@ class Mission
 		};
 		class Item378
 		{
-			position[]={13253.071,18.850515,11737.78};
+			position[]={15529.92,0,12234.267};
 			name="arte_1_1";
 			markerType="ELLIPSE";
 			type="Empty";
