@@ -230,7 +230,8 @@ switch (_vehicle) do
 		{
 			_ret =
 			[
-				["\a3\soft_f_epc\truck_03\Data\truck_03_ext01_co.paa","civ","\a3\soft_f_epc\truck_03\Data\truck_03_ext02_co.paa","\a3\soft_f_epc\truck_03\Data\truck_03_cargo_co.paa"]	//Camo
+				["\a3\soft_f_epc\truck_03\Data\truck_03_ext01_co.paa","civ","\a3\soft_f_epc\truck_03\Data\truck_03_ext02_co.paa","\a3\soft_f_epc\truck_03\Data\truck_03_cargo_co.paa"],	//Camo
+				["skins\car\civ_tempest_cola_ext1.paa","civ","skins\car\civ_tempest_cola_ext2.paa","skins\car\civ_tempest_cola_cargo.paa"]												//Cola
 			];
 		};
 
@@ -238,7 +239,8 @@ switch (_vehicle) do
 		{
 			_ret =
 			[
-				["\a3\soft_f_epc\truck_03\Data\truck_03_ext01_co.paa","civ","\a3\soft_f_epc\truck_03\Data\truck_03_ext02_co.paa","\a3\soft_f_epc\truck_03\Data\truck_03_cargo_co.paa","\a3\soft_f_epc\truck_03\Data\truck_03_cover_co.paa"]	//Camo
+				["\a3\soft_f_epc\truck_03\Data\truck_03_ext01_co.paa","civ","\a3\soft_f_epc\truck_03\Data\truck_03_ext02_co.paa","\a3\soft_f_epc\truck_03\Data\truck_03_cargo_co.paa","\a3\soft_f_epc\truck_03\Data\truck_03_cover_co.paa"],	//Camo
+				["skins\car\civ_tempest_cola_ext1.paa","civ","skins\car\civ_tempest_cola_ext2.paa","skins\car\civ_tempest_cola_cargo.paa","skins\car\civ_tempest_cola_cover.paa"]																//Cola
 			];
 		};
 
@@ -246,7 +248,8 @@ switch (_vehicle) do
 		{
 			_ret =
 			[
-				["\a3\soft_f_epc\truck_03\Data\truck_03_ext01_co.paa","civ","\a3\soft_f_epc\truck_03\Data\truck_03_ext02_co.paa"]		//Camo
+				["\a3\soft_f_epc\truck_03\Data\truck_03_ext01_co.paa","civ","\a3\soft_f_epc\truck_03\Data\truck_03_ext02_co.paa"],		//Camo
+				["skins\car\civ_tempest_cola_ext1.paa","civ","skins\car\civ_tempest_cola_ext2.paa"]										//Cola
 			];
 		};
 
