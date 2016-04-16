@@ -6332,7 +6332,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Schwarzmarkt"",life_fnc_virt_menu,""coffee""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Schwarzmarkt"",life_fnc_virt_menu,""bar""];";
 				};
 			};
 		};
@@ -59290,7 +59290,7 @@ class Mission
 			vehicle="Land_Sink_F";
 			skill=0.60000002;
 			text="mari_processor";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Process Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); life_inv_cannabis > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Marijuana Processing""];";
+			init="this allowDamage false; this enableSimulation false; this addAction["" Marijuana Herstellen"",life_fnc_processAction,""marijuana"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); life_inv_cannabis > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Marijuana Herstellen""];";
 		};
 		class Item5323
 		{
@@ -59621,7 +59621,7 @@ class Mission
 			vehicle="Land_Sink_F";
 			skill=0.60000002;
 			text="heroin_processor";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Process Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_heroinu > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Heroin Processing""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Heroin herstellen"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_heroinu > 0 && !life_is_processing && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian ']; this setVariable[""realname"",""Heroin Herstellen""];";
 		};
 		class Item5353
 		{
@@ -59897,7 +59897,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_3";
-			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction [""Versteck einnehmen"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item5378
 		{
@@ -62914,7 +62914,7 @@ class Mission
 		};
 		class Item375
 		{
-			position[]={15214.687,0,14260.87};
+			position[]={13696.471,15.718008,12346.12};
 			name="arte";
 			text="Artefakte";
 			type="mil_dot";
@@ -62924,7 +62924,7 @@ class Mission
 		};
 		class Item376
 		{
-			position[]={15215.04,0,14259.114};
+			position[]={13696.824,16.203953,12344.364};
 			name="arte_1";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -62936,7 +62936,7 @@ class Mission
 		};
 		class Item377
 		{
-			position[]={15529.566,0,12236.022};
+			position[]={13252.718,18.978317,11739.536};
 			name="arte_2";
 			text="Artefakte";
 			type="mil_dot";
@@ -62946,7 +62946,7 @@ class Mission
 		};
 		class Item378
 		{
-			position[]={15529.92,0,12234.267};
+			position[]={13253.071,18.850515,11737.78};
 			name="arte_1_1";
 			markerType="ELLIPSE";
 			type="Empty";
