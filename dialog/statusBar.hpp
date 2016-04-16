@@ -1,38 +1,5 @@
 #define ST_RIGHT 0x01
-class osefStatusBarAdmin {
-	idd = -1;
-	onLoad = "uiNamespace setVariable ['osefStatusBarAdmin', _this select 0]";
-	onUnload = "uiNamespace setVariable ['osefStatusBarAdmin', objNull]";
-	onDestroy = "uiNamespace setVariable ['osefStatusBarAdmin', objNull]";
-	fadein = 0;
-	fadeout = 0;
-	duration = 10e10;
-	movingEnable = 0;
-	controlsBackground[] = {};
-	objects[] = {};
-	class controls {
-		class statusBarText {
-			idc = 55554;
-			x = safezoneX;
-			y = safezoneY + safezoneH - 0.053;
-			w = safezoneW;
-			h = 0.06;
-			shadow = false;
-			colorBackground[] = { 0.074, 0.082, 0.105, 0.85 };
-			font = "OrbitronLight";
-			size = 0.032;
-			type = 13;
-			style = 2;
-			colorText[] = {1, 1, 1, 1};
-			text="Statusbar Delta-Projekt made by Bumsi";
-			class Attributes {
-				align="center";
-				color = "#ffffff";
-				font = "OrbitronLight";
-			};
-		};
-	};
-};
+
 class osefStatusBar {
 	idd = -1;
 	onLoad = "uiNamespace setVariable ['osefStatusBar', _this select 0]";
@@ -46,20 +13,21 @@ class osefStatusBar {
 	objects[] = {};
 	class controls {
 		class statusBarText {
-			idc = 55555;
-			x = safezoneX + safezoneW - 1.50;
-			y = safezoneY + safezoneH - 0.035;
-			w = 1.3;
-			h = 0.07;
-			shadow = false;
-			font = "OrbitronLight";
-			size = 0.032;
+			idc = 1000;
+			x = safezoneX + safezoneW - 1;
+			y = safezoneY + safezoneH - 0.08;
+			w = 1;
+			h = 0.04;
+			shadow = 2;
+			colorBackground[] = { 1, 0.3, 0, 0.0 };  // uncomment and increase 4th number to have a background
+			font = "PuristaSemibold";
+			size = 0.03;
 			type = 13;
-			style = 2;
-			colorText[] = {1, 1, 1, 1};
-			text="";
+			style = 1;
+			text="Lade Server Informationen...";
 			class Attributes {
-				align="left";
+				align="right";
+				color = "#1866c7";
 			};
 		};
 	};
