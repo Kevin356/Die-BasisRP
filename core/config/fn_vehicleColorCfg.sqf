@@ -49,7 +49,8 @@ switch (_vehicle) do
 				["skins\car\civ_offroad_weed.paa","civ"],								//Weedfarmer
 				["skins\car\civ_offroder_monsterenergy.paa","civ"],						//Monster Energy
 				["skins\car\medic_offroad.paa","med"],									//Medic
-				["skins\car\polizei_offroad.paa","cop"]									//Polizei	
+				["skins\car\polizei_offroad.paa","cop"],								//Polizei
+				["skins\car\civ_offroad_schwarz.paa","civ"]								//Schwarz
 			];
 		};
 	

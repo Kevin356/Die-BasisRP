@@ -50,6 +50,7 @@ switch (_vehicle) do
 			case 10: {_color = "Monster Energy"};
 			case 11: {_color = "Medic"};
 			case 12: {_color = "Polizei"};
+			case 13: {_color = "Schwarz"};
 		};
 	};
 	
