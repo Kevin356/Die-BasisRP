@@ -16,6 +16,7 @@ if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hintSilent "You do
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hintSilent "You need to be a cop to use this store!"; closeDialog 0;};
 if((_this select 3) in ["medic"] && !license_med_air && playerSide != independent) exitWith {hintSilent "Du benötigst eine MedicLizenz und musst Sanitäter sein!"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hintSilent "You need a Diving license to use this shop!"; closeDialog 0;};
+if((_this select 3) in ["copciv"] && playerSide != west) exitWith {hintSilent "Du bist kein Polizist"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 
