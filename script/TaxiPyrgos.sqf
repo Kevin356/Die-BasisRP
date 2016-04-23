@@ -5,6 +5,9 @@ Author : Mahony
 _price = 2000;
 _taxigerufen  = "<t color='#FFFF00' size='2' shadow='1' shadowColor='#000000' align='center'>Ein Taxi wurde gerufen !</t>";
 _taxiangekommen  = "<t color='#FFFF00' size='2' shadow='1' shadowColor='#000000' align='center'>Ihr Taxi sollte nun vorort sein (Sie müssen auch einsteigen) </t>";
+if( !("ItemRadio" in (items player) ) exitWith {hint"Du besitz Kein Handy";
+closeDialog 0 ;
+};
 if ((life_atmcash) < _price + 25000) exitWith {
 hint "Du hast nicht genug geld !";
 closeDialog 0;

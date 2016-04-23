@@ -50,8 +50,9 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 		_veh setDamage 0;
 		titleText["Du hast das Fahrzeug erfolgreich repariert.","PLAIN"];
-		player removeItem "ToolKit";
+	    if (playerSide == civilian) then {player removeItem "ToolKit";
 		};
 	};
+};
 
 _ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];

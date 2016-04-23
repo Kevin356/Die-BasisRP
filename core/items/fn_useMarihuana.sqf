@@ -41,7 +41,7 @@ player setVariable ["smoke_weed", false, true];
 life_drugged_weed = 0;
 player removeAction _smoke_action;
 
-if(life_drugged_cocaine == 0 && (time - _tStart) > life_drugged_weed_duration * 50) then { life_drugged_cocaine = -1; };
+if(life_drugged_weed == 0 && (time - _tStart) > life_drugged_weed_duration * 50) then { life_drugged_weed = -1; };
 
 deleteVehicle _PS;
 
