@@ -276,6 +276,8 @@ switch (_vehicle) do
 			case 8: {_color = "Hello Kitty"};
 			case 9: {_color = "Medic"};
 			case 10: {_color = "Polizei"};
+			case 11: {_color = "Asimov"};
+			case 12: {_color = "Hyper Beast"};
 		};
 	};
 

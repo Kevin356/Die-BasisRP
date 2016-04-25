@@ -275,7 +275,9 @@ switch (_vehicle) do
 				["skins\air\civ_hummingbird_redbull.paa","civ"],																		//Red Bull
 				["skins\air\civ_hummingbird_kitty.paa","civ"],																			//Hello Kitty
 				["skins\air\medic_littlebird.paa","med"],																				//Medic
-				["skins\air\polizei_hummingbird.paa","cop"]																				//Polizei
+				["skins\air\polizei_hummingbird.paa","cop"],																			//Polizei
+				["skins\air\civ_hummingbird_asimov.paa","civ"],																			//Asimov
+				["skins\air\civ_hummingbird_hyperbeast.paa","civ"]																		//Hyper Beast
 			];
 		};
 
