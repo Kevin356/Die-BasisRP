@@ -93,7 +93,7 @@ switch (_vehicle) do
 				["\a3\soft_f_gamma\hatchback_01\Data\Hatchback_01_ext_sport06_co.paa","civ"],		//Custom-Grün
 				["skins\car\civ_hatchback_sport_ken_block.paa","civ"],								//Ken Block	
 				["skins\car\polizei_hatchback.paa","cop"],											//Polizei
-				["skins\car\sek_hatchback.paa","cop"],												//SEK
+				["skins\car\autobahnpolizei_hatchback.paa","cop"],									//Autobahnpolizei
 				["\a3\soft_f_gamma\hatchback_01\Data\Hatchback_01_ext_base09_co.paa","civ"]			//Schwarz
 			];
 		};

@@ -93,7 +93,7 @@ switch (_vehicle) do
 			case 5: {_color = "Custom-Grün"};
 			case 6: {_color = "Ken Block"};
 			case 7: {_color = "Polizei"};
-			case 8: {_color = "SEK"};
+			case 8: {_color = "Autobahnpolizei"};
 			case 9: {_color = "Schwarz"};
 		};
 	};
