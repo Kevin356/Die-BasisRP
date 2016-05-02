@@ -77,7 +77,8 @@ switch (_vehicle) do
 				["\a3\soft_f_gamma\hatchback_01\Data\Hatchback_01_ext_base08_co.paa","civ"],		//Dunkelgrau
 				["\a3\soft_f_gamma\hatchback_01\Data\Hatchback_01_ext_base09_co.paa","civ"],		//Schwarz
 				["skins\car\civ_hatchback_sport_ken_block.paa","civ"],								//Ken Block	
-				["skins\car\polizei_hatchback.paa","cop"]											//Polizei
+				["skins\car\polizei_hatchback.paa","cop"],											//Polizei
+				["skins\car\civ_hatchback_get_right.paa","civ"]										//Get Right
 			];
 		};
 	
@@ -94,7 +95,8 @@ switch (_vehicle) do
 				["skins\car\civ_hatchback_sport_ken_block.paa","civ"],								//Ken Block	
 				["skins\car\polizei_hatchback.paa","cop"],											//Polizei
 				["skins\car\autobahnpolizei_hatchback.paa","cop"],									//Autobahnpolizei
-				["\a3\soft_f_gamma\hatchback_01\Data\Hatchback_01_ext_base09_co.paa","civ"]			//Schwarz
+				["\a3\soft_f_gamma\hatchback_01\Data\Hatchback_01_ext_base09_co.paa","civ"],		//Schwarz
+				["skins\car\civ_hatchback_get_right.paa","civ"]										//Get Right
 			];
 		};
 	

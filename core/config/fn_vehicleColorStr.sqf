@@ -78,6 +78,7 @@ switch (_vehicle) do
 			case 9: {_color = "Schwarz"};
 			case 10: {_color = "Ken Block"};
 			case 11: {_color = "Polizei"};
+			case 12: {_color = "Get Right"};
 		};
 	};
 	
@@ -95,6 +96,7 @@ switch (_vehicle) do
 			case 7: {_color = "Polizei"};
 			case 8: {_color = "Autobahnpolizei"};
 			case 9: {_color = "Schwarz"};
+			case 10: {_color = "Get Right"};
 		};
 	};
 	
