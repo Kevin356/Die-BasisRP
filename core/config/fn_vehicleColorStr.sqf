@@ -233,6 +233,8 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Camo"};
+			case 1: {_color = "Cola"};
+			case 2: {_color = "DHL"};
 		};
 	};
 
@@ -241,6 +243,8 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Camo"};
+			case 1: {_color = "Cola"};
+			case 2: {_color = "DHL"};
 		};
 	};
 
@@ -249,6 +253,8 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Camo"};
+			case 1: {_color = "Cola"};
+			case 2: {_color = "DHL"};
 		};
 	};
 
