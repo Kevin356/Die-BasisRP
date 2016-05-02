@@ -45,9 +45,9 @@ switch (_vehicle) do
 			case 5: {_color = "Custom-Blau"};
 			case 6: {_color = "Dodge"};
 			case 7: {_color = "Dragonball"};
-			case 8: {_color = "Rockstar Lila"};
-			case 9: {_color = "Weedfarmer"};
-			case 10: {_color = "Monster Energy"};
+			case 8: {_color = "Raptor Beast"};
+			case 9: {_color = "Moondye7"};
+			case 10: {_color = "Fox"};
 			case 11: {_color = "Medic"};
 			case 12: {_color = "Polizei"};
 			case 13: {_color = "Schwarz"};

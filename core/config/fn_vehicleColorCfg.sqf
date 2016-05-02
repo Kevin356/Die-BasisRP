@@ -44,10 +44,10 @@ switch (_vehicle) do
 				["\a3\soft_f\offroad_01\Data\offroad_01_ext_base04_co.paa","civ"],		//Dunkelrot
 				["\a3\soft_f\offroad_01\Data\offroad_01_ext_base05_co.paa","civ"],		//Custom-Blau
 				["skins\car\civ_offroad_dodge.paa","civ"],								//Dodge
-				["skins\car\civ_offroad_dragonball.paa","civ"],							//Rockstar Gelb
-				["skins\car\civ_offroad_rockstarlila.paa","civ"],						//Rockstar Lila
-				["skins\car\civ_offroad_weed.paa","civ"],								//Weedfarmer
-				["skins\car\civ_offroder_monsterenergy.paa","civ"],						//Monster Energy
+				["skins\car\civ_offroad_dragonball.paa","civ"],							//Dragonball
+				["skins\car\civ_offroader_raptor_beast.paa","civ"],						//Raptor Beast
+				["skins\car\civ_offroad_moondye7.paa","civ"],							//Moondye7
+				["skins\car\civ_offroad_fox.paa","civ"],								//Fox
 				["skins\car\medic_offroad.paa","med"],									//Medic
 				["skins\car\polizei_offroad.paa","cop"],								//Polizei
 				["skins\car\civ_offroad_schwarz.paa","civ"]								//Schwarz
